@@ -310,3 +310,5 @@ function filterWords(array) {
 console.log(filterWords(["Bob", "Alex", "Zoello"]));
 console.log(filterWords(["León", "Zebra", "Gacela"]));
 console.log(filterWords(["Mercedes", "Bmw", "Audi", "Porche"]));
+
+console.log(parseInt("PEPE"))
