@@ -290,10 +290,17 @@ console.log(sumarPares([2,4,5,6,7,8,3,1,10,4]));
 
 //Recibimos un array con los datos del alumno, pero debemos ordenarlo. En lugar de tener al final el nombre del alumno lo queremos al principio, antes del apellido y queremos añadir al final la nota media. De tal manera que: 
 function ordenDatos(array) {
-    let moo = array.sort()
-    return moo.reverse()
-
-    
+    let suma = 0; 
+    console.log("unshift",array.unshift(array[array.lenght-1]));
+    console.log("longitud", array.lenght-1)
+    console.log("array", array);
+    console.log(array.pop(array[array.lenght-1]));
+    for(let i = 2; i < array.lenght - 1; i++){
+        suma += parseInt(array[i]);
+    }
+    suma = suma/4
+    array.push(suma);
+    return array;
 }
 console.log(ordenDatos(["Rodriguez", "8", 9, '5',4, 'Clara']));
 
