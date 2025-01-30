@@ -7,7 +7,9 @@
     }
     tvSamsung.getImporte = function() {
         let hola = tvSamsung.precio * tvSamsung.unidades;
-        return hola
+        return "El precio total de todo es de: " + hola
     }
 }
 console.log(tvSamsung.getImporte());
+
+document.getElementById("san").textContent=tvSamsung.getImporte();
