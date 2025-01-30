@@ -12,4 +12,4 @@
 }
 console.log(tvSamsung.getImporte());
 
-document.getElementById("san").textContent=tvSamsung.getImporte();
+document.getElementById("san").textContent=tvSamsung.getImporte(); //Printamos en el HTML el resultado de la operacion
