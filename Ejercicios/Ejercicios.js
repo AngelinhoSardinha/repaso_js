@@ -159,62 +159,7 @@ const alumnosJSON = [
       "notam9": 8.5
     }
   ];
-/*
-function init() {
-  let alumnos = JSON.parse(alumnosJSON);
-  let propiedades = Object.keys(alumnos[0]);
 
-  alumnos.forEach(alumno => {
-    let nota = 0;
-    let cuentaNotas = 0;
-
-    for (p of propiedades) {
-      if (p.startsWith("nota")) {
-        nota += alumno[p];
-        cuentaNotas++;
-      }
-    }
-
-    alumno["media"]=nota/cuentaNotas;
-    console.log(alumno)
-
-  });
-*/
-/*
-  propiedades.push("media");
-   let nota=0;
-  let cuentaNotas = 0;
-  let codigoHTML = "<table>";
- 
-  console.log(propiedades);
-
-  //Pintamos la cabecera de la tabla.
-  codigoHTML += "<tr>"
-  for (p of propiedades) {
-    codigoHTML += `<td>${p}</td>`;
-  }
-  //codigoHTML += `<td>MEDIA</td>`;
-  codigoHTML += "</tr>"
-
-  //Pintamos los datos
-  for (let alumno of alumnos) {
-    //console.log(alumno);
-    codigoHTML += "<tr>"
-    for (p of propiedades) {
-      codigoHTML += `<td>${alumno[p]}</td>`
-       if(p.startsWith("nota")){
-        nota+=alumno[p];
-        cuentaNotas++;
-      } 
-    }
-    // codigoHTML += `<td>${nota/cuentaNotas}</td>`;
-    codigoHTML += "</tr>"
-  }
-  codigoHTML += "</table>"
-
-  document.getElementById("tabla").innerHTML = codigoHTML
-}
-*/
 let alumnosJSONparseado = alumnosJSON;
 function añadeMedia(alumnosJSONparseado) {
     let propiedades = Object.keys(alumnosJSONparseado[0]);
@@ -255,11 +200,3 @@ function pintarTabla(alumnosJSONparseado) {
 }
 
 document.getElementById("table").innerHTML = pintarTabla(añadeMedia(alumnosJSONparseado));  
-/*
-let tabla = document.getElementById("tabla");
-for (let alumno of alumnosJSON) {
-    let tr = document.createElement("tr");
-    tabla.appendChild(tr);
-    
-}
-    */
